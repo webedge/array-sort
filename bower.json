@@ -1,0 +1,10 @@
+{
+	"name": "bi-array-sort",
+	"version": "1.0.0",
+	"description": "bi-array-sort",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "http://tfs2013:8080/tfs/BIDevelopmentCollection/PlatformCoreShell/_git/bi-array-sort"
+	}
+}

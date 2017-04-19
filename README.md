@@ -1,6 +1,6 @@
 # array-sort
 Angular 1.X Filter to sort arrays based on sub-properties using [Intl.Collator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Collator)
-and [Array.Sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+and [Array.Sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort). This allows the opportunity to use a javascript natural sort.
 
 #### Install with Bower
 ```sh
@@ -61,6 +61,10 @@ Required: `False`
 Whether punctuation should be ignored. Possible values are true and false; the default is false.
 
 ## Example Usage
+Array start:
+```js 
+[{id: 1, name: Item 1}, {id: 2, name: Item 2}, {id: 3, name: Item 22}, {id: 4, name: Item 3}]
+````
 
 ```js
 scope.sortOptions = {
@@ -72,3 +76,8 @@ scope.sortOptions = {
 ```html
 <tr ng-repeat="item in myArray | arraySort : sortOptions">
 ```
+
+Results in 
+```js 
+[{id: 1, name: Item 1}, {id: 2, name: Item 2}, {id: 4, name: Item 3}, {id: 3, name: Item 22}]
+````

@@ -1,5 +1,5 @@
 ﻿module.exports = {
-    src: '<%= pkg.webroot %>bi-sortArray.js',
+    src: '<%= pkg.webroot %>array-sort.js',
     options: {
         excludeFiles: ['<%= pkg.webapp %>/**/*_ts.js'],
         requireCurlyBraces: ['if', 'else', 'for', 'while', 'do', 'try', 'catch'],

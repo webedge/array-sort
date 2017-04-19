@@ -2,11 +2,11 @@
 	'use strict';
 
 	angular
-		.module('bi-arraySort', [])
-		.filter('biArraySort', sortArray);
+		.module('arraySort', [])
+		.filter('arraySort', arraySort);
 
-	sortArray.$inject = ['$filter'];
-	function sortArray($filter) {
+	arraySort.$inject = ['$filter'];
+	function arraySort($filter) {
 
 		return function (input, options) {
 			let numeric = options.numeric || false,

@@ -1,7 +1,7 @@
 module.exports = {
     main: {
         src: [
-            '<%= pkg.webroot %>bi-sortArray.js'
+            '<%= pkg.webroot %>array-sort.js'
         ],
         dest: '<%= pkg.dest %>/',
         filter: 'isFile'

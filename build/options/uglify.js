@@ -7,7 +7,7 @@
             mangle: {}
         },
         files: {
-            '<%= pkg.dest %>/bi-sortArray.min.js': ['<%= pkg.dest %>/bi-sortArray.js']
+            '<%= pkg.dest %>/array-sort.min.js': ['<%= pkg.dest %>/array-sort.js']
         }
     }
 };

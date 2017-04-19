@@ -5,7 +5,7 @@ module.exports = {
     },
     dist: {
         files: {
-            '<%= pkg.dest %>/bi-sortArray.js': '<%= pkg.dest %>/bi-sortArray.js'
+            '<%= pkg.dest %>/array-sort.js': '<%= pkg.dest %>/array-sort.js'
         }
     }
 }

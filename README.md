@@ -59,3 +59,16 @@ Default: false
 Required: `False`
 
 Whether punctuation should be ignored. Possible values are true and false; the default is false.
+
+## Example Usage
+
+```js
+scope.sortOptions = {
+    numeric: true,
+    sortProperty: 'name'
+};
+```
+
+```html
+<tr ng-repeat="item in myArray | arraySort : sortOptions">
+```

@@ -3,10 +3,10 @@
 (function () {
 	'use strict';
 
-	angular.module('bi-arraySort', []).filter('biArraySort', sortArray);
+	angular.module('arraySort', []).filter('arraySort', arraySort);
 
-	sortArray.$inject = ['$filter'];
-	function sortArray($filter) {
+	arraySort.$inject = ['$filter'];
+	function arraySort($filter) {
 
 		return function (input, options) {
 			var numeric = options.numeric || false,
@@ -26,4 +26,4 @@
 		};
 	}
 })();
-//# sourceMappingURL=bi-sortArray.js.map
+//# sourceMappingURL=array-sort.js.map

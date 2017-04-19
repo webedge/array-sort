@@ -12,7 +12,7 @@
 			let numeric = options.numeric || false,
 				sensitivity = options.sensitivity || 'base',
 				locale = options.locale || undefined,
-				ignorePunctuation = options.ignorePunctuation || true,
+				ignorePunctuation = options.ignorePunctuation || false,
 				caseFirst = options.caseFirst || false,
 				sortValue = options.sortProperty || undefined;
 

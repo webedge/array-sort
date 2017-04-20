@@ -7,7 +7,7 @@
 	function arraySort($filter) {
 
 		return function (input, options) {
-			var numeric = options.numeric || false,
+			let numeric = options.numeric || false,
 				sensitivity = options.sensitivity || 'base',
 				locale = options.locale || undefined,
 				ignorePunctuation = options.ignorePunctuation || false,
@@ -15,7 +15,7 @@
 				sortValue = options.sortProperty || undefined;
 
 			input.sort(function (a, b) {
-				return a[sortValue].localeCompare(b[sortValue], undefined, { numeric: true, sensitivity: 'base' });
+				return a[sortValue].localeCompare(b[sortValue], 'en-US', { numeric: numeric, sensitivity: sensitivity, ignorePunctuation: ignorePunctuation, caseFirst: caseFirst });
 			});
 
 			return input;

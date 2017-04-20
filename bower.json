@@ -1,7 +1,7 @@
 {
-	"name": "bi-array-sort",
-	"version": "1.0.2",
-	"description": "bi-array-sort",
+	"name": "array-sort",
+	"version": "1.0.3",
+	"description": "Sort an array with natural search",
 	"license": "MIT",
 	"repository": {
 		"type": "git",

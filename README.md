@@ -76,6 +76,10 @@ scope.sortOptions = {
 ```html
 <tr ng-repeat="item in myArray | arraySort : sortOptions">
 ```
+Or calling from your controller/directive
+```js
+$filter('arraySort')(myArray, scope.sortOptions);
+```
 
 Results in 
 ```js 

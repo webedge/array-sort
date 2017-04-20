@@ -12,14 +12,12 @@
 			var numeric = options.numeric || false,
 			    sensitivity = options.sensitivity || 'base',
 			    locale = options.locale || undefined,
-			    ignorePunctuation = options.ignorePunctuation || true,
+			    ignorePunctuation = options.ignorePunctuation || false,
 			    caseFirst = options.caseFirst || false,
 			    sortValue = options.sortProperty || undefined;
 
-			var collator = new Intl.Collator(locale, { numeric: numeric, sensitivity: sensitivity, ignorePunctuation: ignorePunctuation, caseFirst: caseFirst });
-
 			input.sort(function (a, b) {
-				return collator.compare(a[sortValue], b[sortValue]);
+				return a[sortValue].localeCompare(b[sortValue], undefined, { numeric: true, sensitivity: 'base' });
 			});
 
 			return input;

@@ -1,6 +1,6 @@
 {
   "name": "bi-array-sort",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "dest": "./dist",
   "webroot": "./",
   "description": "Sort an array based on a property options",

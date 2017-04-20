@@ -1,5 +1,5 @@
 # array-sort
-Angular 1.X Filter to sort arrays based on sub-properties using [Intl.Collator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Collator)
+Angular 1.X Filter to sort arrays based on sub-properties using [String.localeCompare](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/localeCompare)
 and [Array.Sort](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort). This allows the opportunity to use a javascript natural sort.
 
 #### Install with Bower
